@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfxpqpzzVQGK6TAh5PV1GOfQNHSoD2xbE+QkpxCAF1NEevoEH3S10sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <style>
+        .contactForm {
+            width: 40%;
+            padding: 40px;
+            background: rgba(255, 251, 251, 0.2); /* Semi-transparent white */
+            backdrop-filter: blur(10px); /* Blur effect */
+        }
+        .contactForm .inputBox input, 
+            .contactForm .inputBox textarea {
+                width: 100%;
+                padding: 8px 12px; /* More padding for better spacing */
+                font-size: 16px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid #555; /* Slightly lighter gray */
+                outline: none;
+                resize: none;
+                background: rgba(218, 214, 214, 0.5); /* Adjust opacity */ /* Ensures it blends with the design */
+                color: #222; /* Darker text for readability */
+                transition: border-bottom 0.3s ease-in-out;
+            }
+
+            /* Add a focus effect */
+            .contactForm .inputBox input:focus, 
+            .contactForm .inputBox textarea:focus {
+                border-bottom: 2px solid #058283; /* Highlight color */
+            }
+
+    </style>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>
+                Contact us through our email or telephone no. On any enquiries or feedback today.
+                Since we value your feedback, and get a quick response.
+            </p>
+        </div>
+        <div class="container">
+            <div class="containerInfo">
+                <div class="box">
+                    <span class="material-icons-sharp">location_on</span>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>  0420 moi avenue,<br> Nairobi, Kenya,<br> 00100</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="material-icons-sharp"> call </span>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+254(0)791-979-364</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <span class="material-icons-sharp"> mail </span>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>jkmartin047@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form  action="https://formsubmit.co/5ca216c6af0d161c2b27291911943930" method="POST" >
+                    <h2>Send message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" placeholder="Full Name" required="required">
+                       
+                        
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" placeholder="Email" required="required">
+                        
+                        
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="message" placeholder="Enter Message" required="required">
+                       
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

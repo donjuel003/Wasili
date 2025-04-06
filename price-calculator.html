@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>WASILI<span class="danger"></span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html" class="nav-link active">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="" class="nav-link ">
+                    <span class="material-icons-sharp">
+                        search
+                    </span>
+                    <h3>Track Shipments</h3>
+                </a>
+
+                <a href="bookings.html" class="nav-link ">
+                    <span class="material-icons-sharp">
+                        calendar_month
+                    </span>
+                    <h3>Bookings</h3>
+                </a>
+                
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        local_shipping
+                        </span>
+                    <h3>Manage Orders</h3>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        credit_card
+                        </span>
+                    <h3>Pricing Calculator</h3>
+                </a>
+                
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        print
+                    </span>
+                    <h3>Print Invoice</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Messages</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="users.html" class="nav-link">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+
+                
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+
+        
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance and Price Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .calculator {
+            background-color: #181a1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #058283;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #035c5c;
+        }
+        .error {
+            color: red;
+        }
+        #results-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #202528;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#results-section h2 {
+    margin-bottom: 15px;
+    
+    font-size: 1.5rem;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.results-container p {
+    background: #202528;
+    border-left: 5px solid #058283; /* Change color as needed */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.results-container p b {
+    margin-right: 5px;
+}
+
+.results-container p .material-icons-sharp {
+    font-size: 1.2rem;
+    color: #058283; /* Match with the border color */
+}
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Distance and Price Calculator</h1>
+        <form id="calculator-form">
+            <label for="origin">Origin:</label>
+            <select id="origin" name="origin">
+                <option value="central">Central Kenya</option>
+                <option value="northern">Northern Kenya</option>
+                <option value="western">Western Kenya</option>
+                <option value="eastern">Eastern Kenya</option>
+                <option value="southern">Southern Kenya</option>
+            </select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+                <option value="central">Central Kenya</option>
+                <option value="northern">Northern Kenya</option>
+                <option value="western">Western Kenya</option>
+                <option value="eastern">Eastern Kenya</option>
+                <option value="southern">Southern Kenya</option>
+            </select>
+
+            <label for="service-mode">Service Mode:</label>
+            <select id="service-mode" name="service-mode">
+                <option value="normal">Normal (1x rate)</option>
+                <option value="express">Express (1.8x rate)</option>
+            </select>
+
+            <label for="service-type">Service Type:</label>
+            <select id="service-type" name="service-type">
+                <option value="normal">Normal Parcel (500 Ksh/km)</option>
+                <option value="freight">Freight (10,000 Ksh/km)</option>
+                <option value="fragile">Fragile (6,000 Ksh/km)</option>
+                <option value="hazardous">Hazardous (10,000 Ksh/km)</option>
+            </select>
+
+            <button type="button" onclick="calculateDistance()">Calculate</button>
+        </form>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results-section">
+        <h2>Results:</h2>
+        <div id="results" class="results-container">
+        <!-- Results will be dynamically injected here -->
+    </div>
+</main>
+<!-- End of Main Content -->
+
+<!-- Right Section -->
+<div class="right-section">
+    <div class="nav">
+        <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+        </button>
+        <div class="dark-mode">
+            <span class="material-icons-sharp">light_mode</span>
+            <span class="material-icons-sharp active">dark_mode</span>
+        </div>
+        <div class="profile">
+            <div class="info">
+                <p>Hello, <b>Welcome</b></p>
+                <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+                <img src="images/profile-1.jpg">
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+    <script src="calculator.js"></script>
+    <script src="pricer.js"></script>
+</body>
+
+</html>
