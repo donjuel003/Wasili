@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>WASILI<span class="danger"></span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html" class="nav-link ">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="Tracker.html" class="nav-link active ">
+                    <span class="material-icons-sharp">
+                        search
+                    </span>
+                    <h3>Track Shipments</h3>
+                </a>
+
+                <a href="Booking-Widget.html" class="nav-link ">
+                    <span class="material-icons-sharp">
+                        calendar_month
+                    </span>
+                    <h3>Booking Widget</h3>
+                </a>
+                
+                <a href="Manage-Orders.html" class="nav-link">
+                    <span class="material-icons-sharp">
+                        local_shipping
+                        </span>
+                    <h3>Manage Orders</h3>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        credit_card
+                        </span>
+                    <h3>Pricing Calculator</h3>
+                </a>
+                
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        print
+                    </span>
+                    <h3>Print Invoice</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Messages</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="users.html" class="nav-link">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+
+                
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main> 
+            <h1>TRACKER</h1>
+            
+            <table class="table-container">
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Input</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Booking Date</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>Ticket No</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sender Name</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>Receiver Name</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>Shipment Type</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>Total Weight</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+
+            <br>
+            <div class="tracker-buttons">
+                
+                <button class="styled-button"><span class="material-icons-sharp">
+                    print
+                </span>       Print</button>
+
+                <button class="styled-button1">
+                    <span class="material-icons-sharp">
+                        repeat
+                        </span>   Track Again</button>
+
+                        <br>
+                        <br>
+                        <br><br><br><br>
+                        
+                        <h3><span class="material-icons-sharp">search</span><input type="text"  placeholder="Enter shipment No."> </h3>   
+            </div>
+
+
+            
+    </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp ">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp active">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hello, <b>Welcome</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <!-- End of Nav -->
+
+            
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
